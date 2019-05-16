@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.bodyButton{
+    width: 25%;
+    color: #F2F4FF;
+    height: 3em;
+    background-color: #5299E5;
+    border-radius: 15%/75%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-shadow: 1px 1px #96C5F7;
+    font-size: 2em;
+    box-shadow: 1px 1px #96C5F7, ;
+}
+
+.searchBar{
+    width: 25%;
+    color: #F2F4FF;
+}
