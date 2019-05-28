@@ -1,12 +1,12 @@
 const pool = require('../connections').pool;
 
-fuction getResults(request, result){
-    pool.query("SELECT * FROM dictionary", (err, result)=> {
-        result.send({
-            error: err,
-            dictionary: result
-        });
-    })
-};
-
-module.exports.getResults = getResults; 
+    function getAll(req, res){
+        pool.query("SELECT word, description, id FROM dictionary", (err, result)=>{
+            res.send({
+               error: err,
+             dictionary: result
+            })
+        })
+        console.log(dictionary);
+    }
+    module.exports.getAll = getAll;
