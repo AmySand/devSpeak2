@@ -1,9 +1,10 @@
-const express = require('express');
+let express = require('express');
 let router = express.Router();
-let dictionary = require('../models/results.model');
+let result = require('../models/results.model');
 
-router.get('/dictionary', (req, res)=> {
-    dictionary.getAll('dictionary');
+router.get('/results', (req, res)=> {
+    result.getAll(req,res);
+
 })
 
 module.exports = router;
