@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 let result = require('../models/results.model');
 
-router.get('/results', (req, res)=> {
+router.get('/', (req, res)=> {
     result.getAll(req,res);
 
 })
